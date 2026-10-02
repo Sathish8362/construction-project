@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>[Company Name] | General Contractor & Construction Services in [City, State]</title>
+  <meta name="description"
+    content="Professional construction and contracting in [City, State]. We build [new homes, commercial buildings, renovation and extensions, and interiors]. Licensed, insured, fixed quotes.">
+  <meta name="keywords"
+    content="construction company, general contractor [City], new home builder [City], commercial construction [City, State], renovation contractor, building extensions">
+  <meta name="author" content="[Company Name]">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[Company Name] | Trusted Construction in [City, State]">
+  <meta property="og:description"
+    content="Quality new builds, commercial projects, and renovations in [City, State]. Fixed pricing, 10-year warranty, and weekly progress updates.">
+  <meta property="og:image" content="assets/blueprint-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon SVG Data URI -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f2b48'/%3E%3Cpath d='M6 24L16 6l10 18H6zm10-13.5L9.5 21h13L16 10.5z' fill='%23f97316'/%3E%3Cpath d='M14 16h4v5h-4z' fill='%23ffffff'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Barlow Condensed (Bold Industrial Headings) + Plus Jakarta Sans (Clean Modern Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data (JSON-LD) for Local Construction Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "[Kannaiyan M]",
+    "image": "assets/company-hero.jpg",
+    "telephone": "[Phone Number]",
+    "email": "[Email]",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[Street Address]",
+      "addressLocality": "[City]",
+      "addressRegion": "[State]",
+      "postalCode": "[Zip Code]",
+      "addressCountry": "[Country]"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "priceRange": "$$$",
+    "areaServed": "[Thirubuvanam,Tamil Nadu]"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Top Announcement / Blueprint Technical Bar -->
+  <div class="top-spec-bar" role="region" aria-label="Company Quick Info">
+    <div class="container spec-bar-inner">
+      <div class="spec-item spec-location">
+        <svg class="spec-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+          stroke-width="2" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>Serving <strong>[City, State]</strong> &amp; Surrounding Areas</span>
+      </div>
+      <div class="spec-item spec-licence">
+        <svg class="spec-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+          stroke-width="2" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        <span>Licensed &amp; Insured General Contractor &bull; Lic <strong>[#GC-000000]</strong></span>
+      </div>
+      <div class="spec-item spec-hours">
+        <svg class="spec-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+          stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span>[Mon to Sat, 9 am to 6 pm]</span>
+      </div>
+      <div class="spec-item spec-owner">
+        <button type="button" class="top-spec-owner-btn" id="topSpecOwnerBtn" title="Insert project photos directly">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"
+            aria-hidden="true">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+          </svg>
+          <span>Owner Mode: <strong>Insert Photos Directly</strong></span>
+          <span class="spec-owner-badge" id="topPhotoCount">0/8</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="[Company Name] Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 36 36" width="36" height="36" fill="none" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="var(--color-primary-blue)" />
+            <!-- Blueprint Drafting Grid Icon -->
+            <path d="M6 18h24M18 6v24M10 6v24M26 6v24M6 10h24M6 26h24" stroke="var(--color-blueprint-line)"
+              stroke-width="0.75" stroke-dasharray="2 2" opacity="0.4" />
+            <!-- Crane / Framework Silhouette -->
+            <path d="M8 28L18 8l10 20H8z" stroke="var(--color-orange-accent)" stroke-width="2.5"
+              stroke-linejoin="round" />
+            <path d="M14 20h8" stroke="var(--color-orange-accent)" stroke-width="2" />
+            <circle cx="18" cy="8" r="2" fill="var(--color-orange-accent)" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="company-name">[Company Name]</span>
+          <span class="company-tagline">Builders &amp; General Contractors</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#how-we-work" class="nav-link">How We Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          <li><a href="#contact" class="nav-cta-btn">Get a Quote</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls: Owner Studio + Dark Mode Toggle + Direct Phone CTA + Mobile Menu Button -->
+      <div class="header-actions">
+        <!-- Direct Owner Photo Studio Button -->
+        <button id="openOwnerStudioBtn" class="owner-studio-trigger-btn" type="button"
+          aria-label="Owner: Insert Photos Directly" title="Insert your real project &amp; team photos directly">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+            aria-hidden="true">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+          </svg>
+          <span class="owner-btn-text">Insert Photos</span>
+          <span class="owner-header-badge" id="headerPhotoCount">0/8</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark mode"
+          title="Toggle dark / light theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-icon moon-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Direct Phone CTA (Desktop/Tablet quick call) -->
+        <a href="tel:[number]" class="quick-call-link" aria-label="Call [Company Name] at [number]">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span class="quick-phone-text">[number]</span>
+        </a>
+
+        <!-- Hamburger Button (Mobile / Small Tablet) -->
+        <button id="mobileMenuBtn" class="mobile-toggle-btn" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="mobileNav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileNav" class="mobile-nav" aria-label="Mobile Menu" hidden>
+      <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+      <div class="mobile-nav-drawer">
+        <div class="mobile-nav-top">
+          <span class="mobile-brand-title">[Company Name]</span>
+          <button id="closeMobileNavBtn" class="close-menu-btn" aria-label="Close navigation menu">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-owner-item">
+            <button id="mobileOwnerStudioBtn" class="mobile-owner-menu-btn" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                aria-hidden="true">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+              <span>Owner: Insert Photos</span>
+              <span class="mobile-owner-badge" id="mobilePhotoCount">0/8</span>
+            </button>
+          </li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#how-we-work" class="mobile-nav-link">How We Work</a></li>
+          <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+          <li><a href="#credentials" class="mobile-nav-link">Credentials</a></li>
+          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <a href="#contact" class="btn btn-primary btn-block">Get a Free Quote</a>
+          <a href="tel:[number]" class="mobile-direct-call">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>Call [number]</span>
+          </a>
+          <a href="https://wa.me/[number]?text=Hello%20[Company%20Name],%20I%20would%20like%20to%20discuss%20a%20construction%20project."
+            class="mobile-direct-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.175.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.5-1.786-1.676-2.087-.175-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.301.301-.502.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.238-.244-.588-.493-.509-.678-.518-.176-.009-.376-.011-.577-.011-.201 0-.527.075-.803.376-.276.301-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.15.201 2.124 3.243 5.145 4.548.719.311 1.28.497 1.718.636.722.229 1.378.197 1.897.12.578-.087 1.78-.727 2.031-1.431.251-.703.251-1.305.176-1.43-.076-.126-.277-.202-.578-.352zM12 2C6.48 2 2 6.48 2 12c0 1.95.56 3.77 1.53 5.32L2 22l4.83-1.5A9.957 9.957 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.66 0-3.21-.49-4.52-1.33l-.32-.2-3.13.97.99-3.04-.21-.34A8.18 8.18 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2 4.52 0 8.2 3.68 8.2 8.2 0 4.52-3.68 8.2-8.2 8.2z" />
+            </svg>
+            <span>WhatsApp [number]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- SECTION 2: Hero Section (Blueprint-Inspired Design) -->
+    <section class="hero-section" id="hero" aria-label="Hero Section">
+      <!-- Technical Drafting Blueprint Background Grid -->
+      <div class="blueprint-canvas-bg" aria-hidden="true">
+        <div class="blueprint-major-grid"></div>
+        <div class="blueprint-fine-grid"></div>
+        <div class="blueprint-drafting-lines">
+          <!-- Drafting Crosshairs and Technical Specs -->
+          <span class="draft-mark top-left">+ 00.00'</span>
+          <span class="draft-mark top-right">REF: DWG-01 / STRUCTURAL</span>
+          <span class="draft-mark bottom-left">SCALE: 1:100</span>
+          <span class="draft-mark bottom-right">ZONING: COMM/RES</span>
+          <div class="blueprint-cad-circle"></div>
+          <div class="blueprint-diagonal-line"></div>
+        </div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Blueprint Badges -->
+          <div class="hero-eyebrow">
+            <span class="blueprint-tag"><span class="pulse-dot"></span> [BUILDERS IN CITY, STATE]</span>
+            <span class="blueprint-code">PLAN REF: 2026-ENG-B</span>
+          </div>
+
+          <!-- Headline strictly follows: "[one line saying what we build and where]" -->
+          <h1 class="hero-title">
+            [We Build New Homes, Commercial Spaces &amp; Renovations in City, State]
+          </h1>
+
+          <!-- Short Supporting Sentence -->
+          <p class="hero-subtitle">
+            Engineered durability, transparent fixed-price quotes, and milestone-driven craftsmanship for residential
+            and commercial property owners across [city, state].
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary btn-lg" id="heroGetQuoteBtn">
+              <span>Get a Free Quote</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-outline btn-lg" id="heroSeeProjectsBtn">
+              <span>See Our Projects</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 8 16 12 12 16"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Trust Indicators -->
+          <div class="hero-trust-list">
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Fixed Price Guarantee</span>
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Weekly Photo Updates</span>
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>[10-Year] Warranty</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Blueprint Graphic / Architectural Elevation Visual -->
+        <div class="hero-visual-card">
+          <div class="photo-slot hero-photo-slot" data-slot-id="hero-photo">
+            <!-- Default Blueprint Elevation Schematic -->
+            <div class="blueprint-schematic-box hero-blueprint-view">
+              <div class="schematic-header">
+                <span class="schematic-title">ELEVATION A-1 // STRUCTURAL SPEC</span>
+                <label class="btn-upload-hero" title="Owner: Insert Hero photo directly">
+                  <input type="file" accept="image/*" class="slot-file-input" data-slot="hero-photo" hidden>
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"
+                    aria-hidden="true">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                  <span>Insert Photo</span>
+                </label>
+              </div>
+
+              <!-- Technical SVG Architectural Illustration -->
+              <div class="schematic-svg-wrap">
+                <svg viewBox="0 0 500 320" class="schematic-svg" aria-label="Architectural Blueprint Drawing">
+                  <defs>
+                    <pattern id="cadGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.75" />
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#cadGrid)" />
+
+                  <!-- Ground Datum Line -->
+                  <line x1="20" y1="280" x2="480" y2="280" stroke="var(--color-orange-accent)" stroke-width="2"
+                    stroke-dasharray="8 4" />
+                  <text x="30" y="300" fill="var(--color-text-muted)" font-family="monospace" font-size="10">DATUM LEVEL
+                    &plusmn;0.000</text>
+
+                  <!-- Building Frame Structure Lines -->
+                  <!-- Foundation & Ground Floor -->
+                  <rect x="70" y="160" width="200" height="120" fill="none" stroke="#60a5fa" stroke-width="2" />
+                  <rect x="270" y="100" width="160" height="180" fill="none" stroke="#60a5fa" stroke-width="2" />
+
+                  <!-- Roof Gable -->
+                  <polygon points="70,160 170,80 270,160" fill="none" stroke="var(--color-orange-accent)"
+                    stroke-width="2.5" />
+                  <!-- Flat Commercial Roof Terrace -->
+                  <line x1="260" y1="100" x2="440" y2="100" stroke="var(--color-orange-accent)" stroke-width="2.5" />
+                  <line x1="260" y1="92" x2="440" y2="92" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3 3" />
+
+                  <!-- Windows and Structural Bays -->
+                  <rect x="95" y="190" width="40" height="50" fill="none" stroke="#93c5fd" stroke-width="1.5" />
+                  <line x1="115" y1="190" x2="115" y2="240" stroke="#93c5fd" stroke-width="1" />
+                  <line x1="95" y1="215" x2="135" y2="215" stroke="#93c5fd" stroke-width="1" />
+
+                  <rect x="165" y="190" width="40" height="50" fill="none" stroke="#93c5fd" stroke-width="1.5" />
+                  <rect x="295" y="130" width="110" height="40" fill="none" stroke="#93c5fd" stroke-width="1.5" />
+                  <rect x="295" y="195" width="110" height="60" fill="none" stroke="#93c5fd" stroke-width="1.5" />
+
+                  <!-- Dimension Lines -->
+                  <line x1="50" y1="160" x2="50" y2="280" stroke="#f97316" stroke-width="1" />
+                  <line x1="45" y1="160" x2="55" y2="160" stroke="#f97316" stroke-width="1" />
+                  <line x1="45" y1="280" x2="55" y2="280" stroke="#f97316" stroke-width="1" />
+                  <text x="35" y="225" fill="#f97316" font-family="monospace" font-size="10"
+                    transform="rotate(-90,35,225)" text-anchor="middle">H = 3,600 MM</text>
+
+                  <line x1="70" y1="45" x2="430" y2="45" stroke="#38bdf8" stroke-width="1" />
+                  <line x1="70" y1="40" x2="70" y2="50" stroke="#38bdf8" stroke-width="1" />
+                  <line x1="430" y1="40" x2="430" y2="50" stroke="#38bdf8" stroke-width="1" />
+                  <text x="250" y="38" fill="#38bdf8" font-family="monospace" font-size="10" text-anchor="middle">TOTAL
+                    SPAN: 16,800 MM</text>
+                </svg>
+              </div>
+
+              <div class="schematic-footer">
+                <div class="schematic-meta-cell">
+                  <span class="meta-label">PROJECT TYPE</span>
+                  <span class="meta-val">[Residential &amp; Commercial]</span>
+                </div>
+                <div class="schematic-meta-cell">
+                  <span class="meta-label">LOCATION</span>
+                  <span class="meta-val">[City, State]</span>
+                </div>
+                <div class="schematic-meta-cell">
+                  <span class="meta-label">QUALITY AUDIT</span>
+                  <span class="meta-val text-accent">100% VERIFIED</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Uploaded Hero Image View -->
+            <div class="hero-live-wrap" hidden>
+              <img src="" alt="Featured Construction Project" class="hero-img slot-img" loading="eager">
+              <div class="photo-slot-actions">
+                <label class="slot-action-btn change-btn" title="Change this photo">
+                  <input type="file" accept="image/*" class="slot-file-input" data-slot="hero-photo" hidden>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                  <span>Change Photo</span>
+                </label>
+                <button type="button" class="slot-action-btn remove-btn" data-reset-slot="hero-photo"
+                  title="Reset to blueprint schematic">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                  </svg>
+                  <span>Reset to CAD</span>
+                </button>
+              </div>
+              <div class="hero-photo-badge">
+                <span class="pulse-dot"></span>
+                <span>FEATURED MASTER BUILD &bull; COMPLETED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Key Facts Strip -->
+    <section class="key-facts-strip" aria-label="Key Facts and Statistics">
+      <div class="container">
+        <div class="facts-grid">
+          <!-- Fact 1: Years in Business -->
+          <div class="fact-card">
+            <div class="fact-icon-wrap">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="fact-data">
+              <div class="fact-value">[Year]</div>
+              <div class="fact-label">Established in [Year]</div>
+              <div class="fact-subtext">[number]+ Years of Proven Quality</div>
+            </div>
+          </div>
+
+          <!-- Fact 2: Projects Completed -->
+          <div class="fact-card">
+            <div class="fact-icon-wrap">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="fact-data">
+              <div class="fact-value">[number]+</div>
+              <div class="fact-label">Projects Completed</div>
+              <div class="fact-subtext">On Schedule &amp; On Budget</div>
+            </div>
+          </div>
+
+          <!-- Fact 3: Licensed & Insured -->
+          <div class="fact-card">
+            <div class="fact-icon-wrap">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="fact-data">
+              <div class="fact-value">100%</div>
+              <div class="fact-label">Licensed &amp; Insured</div>
+              <div class="fact-subtext">$5M Comprehensive Liability</div>
+            </div>
+          </div>
+
+          <!-- Fact 4: Warranty Length -->
+          <div class="fact-card">
+            <div class="fact-icon-wrap">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="fact-data">
+              <div class="fact-value">[10-Year]</div>
+              <div class="fact-label">Structural Warranty</div>
+              <div class="fact-subtext">Direct Builder Guarantee</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Services -->
+    <section class="section services-section" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[OUR CORE CAPABILITIES]</div>
+          <h2 class="section-title" id="servicesTitle">Construction Services We Deliver in [City, State]</h2>
+          <p class="section-subtitle">
+            From bare ground to turnkey commercial delivery, we manage engineering, permits, and construction with
+            dedicated in-house supervision.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: New Homes -->
+          <article class="service-card">
+            <div class="service-top-row">
+              <div class="service-index">01</div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-name">[New Home Construction]</h3>
+            <p class="service-description">
+              Custom residential builds engineered for long-term structural integrity, energy efficiency, and your exact
+              architectural plans. Handled from excavation to final occupancy certification.
+            </p>
+            <ul class="service-bullets">
+              <li>Full architectural &amp; structural engineering</li>
+              <li>Foundation, concrete, &amp; framing precision</li>
+              <li>Turnkey delivery with guaranteed move-in date</li>
+            </ul>
+          </article>
+
+          <!-- Service 2: Commercial Buildings -->
+          <article class="service-card">
+            <div class="service-top-row">
+              <div class="service-index">02</div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                  <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                  <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                  <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                  <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                  <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                  <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                  <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                  <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                  <line x1="9" y1="18" x2="9" y2="18.01"></line>
+                  <line x1="15" y1="18" x2="15" y2="18.01"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-name">[Commercial Buildings]</h3>
+            <p class="service-description">
+              Retail spaces, corporate offices, medical facilities, and commercial developments built to code with
+              rigorous milestone tracking and transparent cost accounting.
+            </p>
+            <ul class="service-bullets">
+              <li>Strict commercial building code compliance</li>
+              <li>Steel, concrete, and heavy framing systems</li>
+              <li>On-time handover to minimize commercial downtime</li>
+            </ul>
+          </article>
+
+          <!-- Service 3: Renovations & Extensions -->
+          <article class="service-card">
+            <div class="service-top-row">
+              <div class="service-index">03</div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
+                  <line x1="3" y1="22" x2="21" y2="22"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-name">[Renovations &amp; Extensions]</h3>
+            <p class="service-description">
+              Seamless house extensions, second-story additions, and structural layout reconfigurations that expand your
+              functional square footage while preserving building aesthetics.
+            </p>
+            <ul class="service-bullets">
+              <li>Load-bearing wall removals &amp; beam insertions</li>
+              <li>Ground and upper floor square footage additions</li>
+              <li>Dust containment &amp; organized site management</li>
+            </ul>
+          </article>
+
+          <!-- Service 4: Custom Interiors -->
+          <article class="service-card">
+            <div class="service-top-row">
+              <div class="service-index">04</div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-name">[Custom Interiors &amp; Fit-Outs]</h3>
+            <p class="service-description">
+              Premium interior carpentry, bespoke cabinetry, luxury kitchens, bathrooms, and acoustic commercial
+              fit-outs crafted with exact millimeter tolerances.
+            </p>
+            <ul class="service-bullets">
+              <li>High-durability flooring &amp; architectural drywall</li>
+              <li>Plumbing, electrical, and HVAC modernization</li>
+              <li>Custom millwork and luxury finishing touches</li>
+            </ul>
+          </article>
+
+          <!-- Service 5: Structural & Foundation Engineering -->
+          <article class="service-card">
+            <div class="service-top-row">
+              <div class="service-index">05</div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M2 20h20"></path>
+                  <path d="M5 20V8l7-5 7 5v12"></path>
+                  <line x1="12" y1="3" x2="12" y2="20"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-name">[Structural Works &amp; Foundations]</h3>
+            <p class="service-description">
+              Reinforced concrete footings, slab-on-grade foundations, retaining walls, and seismic retrofits engineered
+              for local soil and environmental conditions.
+            </p>
+            <ul class="service-bullets">
+              <li>Soil testing and engineered soil stabilization</li>
+              <li>Waterproofing membranes &amp; drainage systems</li>
+              <li>Certified structural steel framing and bolting</li>
+            </ul>
+          </article>
+
+          <!-- Service 6: Permitting & Project Management -->
+          <article class="service-card">
+            <div class="service-top-row">
+              <div class="service-index">06</div>
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-name">[Approvals &amp; Project Management]</h3>
+            <p class="service-description">
+              Zero stress permitting. We handle municipal zoning approvals, plan submissions, safety inspections,
+              subcontractor scheduling, and material procurement.
+            </p>
+            <ul class="service-bullets">
+              <li>Full city permit filing &amp; zoning clearance</li>
+              <li>Dedicated on-site licensed supervisor</li>
+              <li>Weekly photo reports &amp; timeline tracking</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="services-cta-banner">
+          <div class="banner-text">
+            <strong>Have an upcoming blueprint or architectural drawing?</strong>
+            <span>Bring your plans for a line-item cost analysis and structural feasibility review.</span>
+          </div>
+          <a href="#contact" class="btn btn-secondary">Request Plan Review</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Projects -->
+    <section class="section projects-section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[PORTFOLIO OF RECENT WORK]</div>
+          <h2 class="section-title" id="projectsTitle">Featured Projects in [City, State]</h2>
+          <p class="section-subtitle">
+            Explore a selection of our recent residential and commercial builds. Every project is delivered with a
+            strict fixed-price guarantee and verifiable quality records.
+          </p>
+        </div>
+
+        <!-- Project Cards Grid with Direct Owner Photo Upload Option -->
+        <div class="projects-grid">
+
+          <!-- Project 1: New Home -->
+          <article class="project-card">
+            <div class="photo-slot" data-slot-id="project-1">
+              <!-- Placeholder State with Direct Upload Button -->
+              <div class="photo-placeholder-box" role="img"
+                aria-label="Photo placeholder for The Oakridge Modern Residence">
+                <div class="placeholder-blueprint-grid"></div>
+                <div class="placeholder-content">
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="placeholder-icon" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span class="placeholder-label">[Project 1 Photo]</span>
+                  <label class="btn-upload-direct" title="Upload photo from phone or computer">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-1" hidden>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Insert Photo Directly</span>
+                  </label>
+                  <span class="placeholder-specs">Tap to choose from camera / gallery</span>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+              <!-- Live Uploaded Image View (Shown when photo is uploaded) -->
+              <div class="project-live-wrap" hidden>
+                <img src="" alt="The Oakridge Modern Residence" class="project-img slot-img" loading="lazy">
+                <div class="photo-slot-actions">
+                  <label class="slot-action-btn change-btn" title="Change this photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-1" hidden>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                      </path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <span>Change</span>
+                  </label>
+                  <button type="button" class="slot-action-btn remove-btn" data-reset-slot="project-1"
+                    title="Reset to blueprint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-type-tag">[New Home Construction]</div>
+              <h3 class="project-name">[The Oakridge Modern Residence]</h3>
+              <p class="project-summary">
+                Custom two-story luxury residence featuring post-tensioned slab foundation, steel-frame open living
+                areas, and high-efficiency thermal envelope.
+              </p>
+
+              <div class="project-meta-strip">
+                <div class="meta-item">
+                  <span class="meta-title">Area</span>
+                  <span class="meta-data">[4,850 sq ft]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Duration</span>
+                  <span class="meta-data">[11 Months]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Location</span>
+                  <span class="meta-data">[Thirubuvanam, Tamil Nadu]</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Commercial -->
+          <article class="project-card">
+            <div class="photo-slot" data-slot-id="project-2">
+              <div class="photo-placeholder-box" role="img"
+                aria-label="Photo placeholder for Pinnacle Commercial Plaza">
+                <div class="placeholder-blueprint-grid"></div>
+                <div class="placeholder-content">
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="placeholder-icon" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span class="placeholder-label">[Project 2 Photo]</span>
+                  <label class="btn-upload-direct" title="Upload photo from phone or computer">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-2" hidden>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Insert Photo Directly</span>
+                  </label>
+                  <span class="placeholder-specs">Tap to choose from camera / gallery</span>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+              <div class="project-live-wrap" hidden>
+                <img src="" alt="Pinnacle Corporate & Medical Plaza" class="project-img slot-img" loading="lazy">
+                <div class="photo-slot-actions">
+                  <label class="slot-action-btn change-btn" title="Change this photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-2" hidden>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                      </path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <span>Change</span>
+                  </label>
+                  <button type="button" class="slot-action-btn remove-btn" data-reset-slot="project-2"
+                    title="Reset to blueprint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-type-tag">[Commercial Building]</div>
+              <h3 class="project-name">[Pinnacle Corporate &amp; Medical Plaza]</h3>
+              <p class="project-summary">
+                Turnkey commercial office and outpatient facility with structural steel framework, ADA compliant
+                elevators, and fire-rated utility shafts.
+              </p>
+
+              <div class="project-meta-strip">
+                <div class="meta-item">
+                  <span class="meta-title">Area</span>
+                  <span class="meta-data">[18,200 sq ft]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Duration</span>
+                  <span class="meta-data">[14 Months]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Location</span>
+                  <span class="meta-data">[Thirubuvanam, Tamil Nadu]</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Renovation & Extension -->
+          <article class="project-card">
+            <div class="photo-slot" data-slot-id="project-3">
+              <div class="photo-placeholder-box" role="img" aria-label="Photo placeholder for Highland Park Extension">
+                <div class="placeholder-blueprint-grid"></div>
+                <div class="placeholder-content">
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="placeholder-icon" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span class="placeholder-label">[Project 3 Photo]</span>
+                  <label class="btn-upload-direct" title="Upload photo from phone or computer">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-3" hidden>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Insert Photo Directly</span>
+                  </label>
+                  <span class="placeholder-specs">Tap to choose from camera / gallery</span>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+              <div class="project-live-wrap" hidden>
+                <img src="" alt="Highland Park Addition" class="project-img slot-img" loading="lazy">
+                <div class="photo-slot-actions">
+                  <label class="slot-action-btn change-btn" title="Change this photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-3" hidden>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                      </path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <span>Change</span>
+                  </label>
+                  <button type="button" class="slot-action-btn remove-btn" data-reset-slot="project-3"
+                    title="Reset to blueprint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-type-tag">[Renovation &amp; Extension]</div>
+              <h3 class="project-name">[Highland Park Rear &amp; Second-Story Addition]</h3>
+              <p class="project-summary">
+                Extensive structural overhaul expanding existing footprint by 1,400 sq ft with an open kitchen pavilion
+                and upper master suite wing.
+              </p>
+
+              <div class="project-meta-strip">
+                <div class="meta-item">
+                  <span class="meta-title">Area</span>
+                  <span class="meta-data">[3,200 sq ft]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Duration</span>
+                  <span class="meta-data">[6 Months]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Location</span>
+                  <span class="meta-data">[Thirubuvanam, Tamil Nadu]</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Custom Interior Fit-Out -->
+          <article class="project-card">
+            <div class="photo-slot" data-slot-id="project-4">
+              <div class="photo-placeholder-box" role="img" aria-label="Photo placeholder for Skyline Executive Suite">
+                <div class="placeholder-blueprint-grid"></div>
+                <div class="placeholder-content">
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="placeholder-icon" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span class="placeholder-label">[Project 4 Photo]</span>
+                  <label class="btn-upload-direct" title="Upload photo from phone or computer">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-4" hidden>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Insert Photo Directly</span>
+                  </label>
+                  <span class="placeholder-specs">Tap to choose from camera / gallery</span>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+              <div class="project-live-wrap" hidden>
+                <img src="" alt="Skyline Penthouse & Executive Suite" class="project-img slot-img" loading="lazy">
+                <div class="photo-slot-actions">
+                  <label class="slot-action-btn change-btn" title="Change this photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-4" hidden>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                      </path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <span>Change</span>
+                  </label>
+                  <button type="button" class="slot-action-btn remove-btn" data-reset-slot="project-4"
+                    title="Reset to blueprint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-type-tag">[Custom Interiors]</div>
+              <h3 class="project-name">[Skyline Penthouse &amp; Executive Suite]</h3>
+              <p class="project-summary">
+                High-specification interior reconstruction with architectural acoustic ceiling battens, customized
+                walnut joinery, and concealed lighting.
+              </p>
+
+              <div class="project-meta-strip">
+                <div class="meta-item">
+                  <span class="meta-title">Area</span>
+                  <span class="meta-data">[2,600 sq ft]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Duration</span>
+                  <span class="meta-data">[3.5 Months]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Location</span>
+                  <span class="meta-data">[Thirubuvanam, Tamil Nadu]</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Residential New Build -->
+          <article class="project-card">
+            <div class="photo-slot" data-slot-id="project-5">
+              <div class="photo-placeholder-box" role="img"
+                aria-label="Photo placeholder for Cedar Crest Hillside Home">
+                <div class="placeholder-blueprint-grid"></div>
+                <div class="placeholder-content">
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="placeholder-icon" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span class="placeholder-label">[Project 5 Photo]</span>
+                  <label class="btn-upload-direct" title="Upload photo from phone or computer">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-5" hidden>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Insert Photo Directly</span>
+                  </label>
+                  <span class="placeholder-specs">Tap to choose from camera / gallery</span>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+              <div class="project-live-wrap" hidden>
+                <img src="" alt="Cedar Crest Hillside Home" class="project-img slot-img" loading="lazy">
+                <div class="photo-slot-actions">
+                  <label class="slot-action-btn change-btn" title="Change this photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-5" hidden>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                      </path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <span>Change</span>
+                  </label>
+                  <button type="button" class="slot-action-btn remove-btn" data-reset-slot="project-5"
+                    title="Reset to blueprint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-type-tag">[New Home Construction]</div>
+              <h3 class="project-name">[Cedar Crest Hillside Home]</h3>
+              <p class="project-summary">
+                Complex terrain residential development incorporating stepped reinforced concrete retaining walls,
+                panoramic glass facades, and cantilevered balconies.
+              </p>
+
+              <div class="project-meta-strip">
+                <div class="meta-item">
+                  <span class="meta-title">Area</span>
+                  <span class="meta-data">[3,900 sq ft]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Duration</span>
+                  <span class="meta-data">[9 Months]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Location</span>
+                  <span class="meta-data">[Thirubuvanam, Tamil Nadu]</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Commercial Facility Extension -->
+          <article class="project-card">
+            <div class="photo-slot" data-slot-id="project-6">
+              <div class="photo-placeholder-box" role="img"
+                aria-label="Photo placeholder for Westside Logistics Facility">
+                <div class="placeholder-blueprint-grid"></div>
+                <div class="placeholder-content">
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="placeholder-icon" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <span class="placeholder-label">[Project 6 Photo]</span>
+                  <label class="btn-upload-direct" title="Upload photo from phone or computer">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-6" hidden>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Insert Photo Directly</span>
+                  </label>
+                  <span class="placeholder-specs">Tap to choose from camera / gallery</span>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+              <div class="project-live-wrap" hidden>
+                <img src="" alt="Westside Logistics & Tech Facility" class="project-img slot-img" loading="lazy">
+                <div class="photo-slot-actions">
+                  <label class="slot-action-btn change-btn" title="Change this photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="project-6" hidden>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                      </path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <span>Change</span>
+                  </label>
+                  <button type="button" class="slot-action-btn remove-btn" data-reset-slot="project-6"
+                    title="Reset to blueprint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+                <span class="project-status-badge">Completed</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-type-tag">[Commercial &amp; Extension]</div>
+              <h3 class="project-name">[Westside Logistics &amp; Tech Facility]</h3>
+              <p class="project-summary">
+                Industrial addition featuring reinforced slab with heavy forklift loading capacity, clear-span
+                structural trusses, and energy-efficient insulated panelling.
+              </p>
+
+              <div class="project-meta-strip">
+                <div class="meta-item">
+                  <span class="meta-title">Area</span>
+                  <span class="meta-data">[8,400 sq ft]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Duration</span>
+                  <span class="meta-data">[8 Months]</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-title">Location</span>
+                  <span class="meta-data">[Thirubuvanam, Tamil Nadu]</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: How We Work -->
+    <section class="section process-section" id="how-we-work" aria-labelledby="processTitle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[TRANSPARENT 4-STEP PROCESS]</div>
+          <h2 class="section-title" id="processTitle">How We Work: From Blueprint to Handover</h2>
+          <p class="section-subtitle">
+            No unexpected invoices, no disappearing subcontractors. Here is our straightforward, step-by-step workflow
+            designed to keep you in complete control.
+          </p>
+        </div>
+
+        <div class="process-steps-grid">
+          <!-- Step 1: Site Visit -->
+          <div class="process-step-card">
+            <div class="step-num-badge">01</div>
+            <div class="step-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="step-title">Site Visit &amp; Feasibility</h3>
+            <p class="step-text">
+              We meet on-site in [City, State] to inspect physical site topography, evaluate soil conditions, assess
+              access, and review your architectural drawings or ideas.
+            </p>
+            <div class="step-outcome">
+              <span class="outcome-label">Deliverable:</span>
+              <span class="outcome-val">Preliminary structural assessment &amp; scope breakdown</span>
+            </div>
+          </div>
+
+          <!-- Step 2: Fixed Quote -->
+          <div class="process-step-card">
+            <div class="step-num-badge">02</div>
+            <div class="step-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="step-title">Fixed Quote &amp; Contract</h3>
+            <p class="step-text">
+              You receive a detailed, line-by-line itemized quote covering labor, materials, permits, and exact delivery
+              dates. We lock in the price before a single shovel enters the dirt.
+            </p>
+            <div class="step-outcome">
+              <span class="outcome-label">Deliverable:</span>
+              <span class="outcome-val">Legally binding fixed-price contract with zero hidden clauses</span>
+            </div>
+          </div>
+
+          <!-- Step 3: Construction & Weekly Photo Updates -->
+          <div class="process-step-card highlight-step">
+            <div class="step-num-badge">03</div>
+            <div class="step-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="step-title">Construction &amp; Weekly Photo Updates</h3>
+            <p class="step-text">
+              Our licensed trades build your project under daily master builder supervision. Every Friday afternoon, you
+              receive high-resolution photo logs and milestone progress reports via WhatsApp or email.
+            </p>
+            <div class="step-outcome">
+              <span class="outcome-label">Deliverable:</span>
+              <span class="outcome-val">Weekly digital progress albums &amp; schedule checks</span>
+            </div>
+          </div>
+
+          <!-- Step 4: Handover -->
+          <div class="process-step-card">
+            <div class="step-num-badge">04</div>
+            <div class="step-icon-wrap">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path
+                  d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+                </path>
+              </svg>
+            </div>
+            <h3 class="step-title">Final Inspection &amp; Handover</h3>
+            <p class="step-text">
+              We complete an exhaustive 150-point quality audit, obtain the official municipal occupancy certificate,
+              clean the premises thoroughly, and hand over your keys with full warranty paperwork.
+            </p>
+            <div class="step-outcome">
+              <span class="outcome-label">Deliverable:</span>
+              <span class="outcome-val">Occupancy certificate, keys, and [10-year] warranty pack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: About Us -->
+    <section class="section about-section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- About Copy & Story -->
+          <div class="about-content">
+            <div class="section-tag">[WHO WE ARE]</div>
+            <h2 class="section-title" id="aboutTitle">Built on Integrity, Engineered for Generations</h2>
+
+            <div class="about-story">
+              <p class="lead-text">
+                [Company Name] was founded in [Year] by [Owner / Founder Name] with a simple standard: build every
+                structure as if our own families were living and working inside it.
+              </p>
+              <p>
+                Having spent over [20] years on active construction sites in [City, State], [Owner Name] saw firsthand
+                how clients were frustrated by bloated budgets, unreturned calls, and cutting corners on foundational
+                work.
+              </p>
+              <p>
+                We established [Company Name] as an antidote to industry bad habits. We work with an open-book policy:
+                certified materials, licensed trade crews, daily on-site superintendence, and fixed upfront quotes. We
+                don't take on 50 jobs at once just to outsource them; we give each project the meticulous engineering
+                focus it demands.
+              </p>
+            </div>
+
+            <!-- Founder Core Principles Grid -->
+            <div class="principles-grid">
+              <div class="principle-item">
+                <span class="principle-bullet">01</span>
+                <div>
+                  <strong>No Hidden Surprises:</strong> Fixed contracts with exact material specifications.
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-bullet">02</span>
+                <div>
+                  <strong>Direct Accountability:</strong> You talk directly with the master builder running your job.
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-bullet">03</span>
+                <div>
+                  <strong>Engineered to Last:</strong> We exceed minimum building code standards at every critical
+                  junction.
+                </div>
+              </div>
+            </div>
+
+            <!-- Founder Quote Box -->
+            <blockquote class="founder-quote">
+              <p>&ldquo;A building is only as reliable as the foundation beneath it and the honesty of the people who
+                pour it.&rdquo;</p>
+              <cite>&mdash; [Owner / Founder Name], Master Builder &amp; Managing Director</cite>
+            </blockquote>
+          </div>
+
+          <!-- About Visuals / Team Photo Slot with Direct Upload -->
+          <div class="about-visuals">
+            <div class="photo-slot team-slot" data-slot-id="team-photo">
+              <!-- Placeholder State -->
+              <div class="team-photo-placeholder" role="img" aria-label="Photo placeholder for Kannaiyan M and Team">
+                <div class="placeholder-blueprint-grid"></div>
+                <div class="placeholder-content">
+                  <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"
+                    class="placeholder-icon" aria-hidden="true">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span class="placeholder-label">[Owner &amp; Team Photo]</span>
+                  <label class="btn-upload-direct" title="Upload owner or team photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="team-photo" hidden>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Insert Owner / Team Photo</span>
+                  </label>
+                  <span class="placeholder-specs">Recommended: 1200 &times; 900 px &bull; Tap to upload</span>
+                  <span class="placeholder-sub">Kannaiyan M &amp; In-House Construction Crew</span>
+                </div>
+                <div class="team-badge-overlay">
+                  <strong>[number]+</strong>
+                  <span>Permanent Licensed Craftsmen &amp; Engineers</span>
+                </div>
+              </div>
+              <!-- Live Uploaded Image View -->
+              <div class="team-live-wrap" hidden>
+                <img src="" alt="Kannaiyan M and Construction Team" class="team-img slot-img" loading="lazy">
+                <div class="photo-slot-actions">
+                  <label class="slot-action-btn change-btn" title="Change this photo">
+                    <input type="file" accept="image/*" class="slot-file-input" data-slot="team-photo" hidden>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                      </path>
+                      <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <span>Change</span>
+                  </label>
+                  <button type="button" class="slot-action-btn remove-btn" data-reset-slot="team-photo"
+                    title="Reset to blueprint">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <polyline points="3 6 5 6 21 6"></polyline>
+                      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span>Reset</span>
+                  </button>
+                </div>
+                <div class="team-badge-overlay">
+                  <strong>[number]+</strong>
+                  <span>Permanent Licensed Craftsmen &amp; Engineers</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Card Overlay -->
+            <div class="experience-strip-card">
+              <div class="exp-cell">
+                <span class="exp-num">[number]+</span>
+                <span class="exp-label">Completed Builds in [City]</span>
+              </div>
+              <div class="exp-cell">
+                <span class="exp-num">100%</span>
+                <span class="exp-label">Code Compliance Rate</span>
+              </div>
+              <div class="exp-cell">
+                <span class="exp-num">[Year]</span>
+                <span class="exp-label">Serving [State] Since</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Credentials -->
+    <section class="section credentials-section" id="credentials" aria-labelledby="credentialsTitle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[CERTIFIED &amp; COMPLIANT]</div>
+          <h2 class="section-title" id="credentialsTitle">Licenses, Insurance &amp; Safety Record</h2>
+          <p class="section-subtitle">
+            Never risk your property investment with an unlicensed contractor. Here are our active registrations,
+            guarantees, and verified compliance credentials.
+          </p>
+        </div>
+
+        <div class="credentials-grid">
+          <!-- Credential 1: License & Registration -->
+          <div class="cred-card">
+            <div class="cred-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="cred-title">License &amp; Registration</h3>
+            <p class="cred-body">
+              Fully registered General Contractor with the State Licensing Board. Active commercial &amp; residential
+              building classification.
+            </p>
+            <div class="cred-code-badge">
+              <span>LIC # [GC-89421-B]</span>
+            </div>
+          </div>
+
+          <!-- Credential 2: Insurance -->
+          <div class="cred-card">
+            <div class="cred-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="cred-title">Comprehensive Insurance</h3>
+            <p class="cred-body">
+              $5,000,000 Commercial General Liability coverage plus full Workers&rsquo; Compensation for all on-site
+              personnel. Certificates issued before commencement.
+            </p>
+            <div class="cred-code-badge">
+              <span>$5,000,000 COVERAGE</span>
+            </div>
+          </div>
+
+          <!-- Credential 3: Warranty Terms -->
+          <div class="cred-card">
+            <div class="cred-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="cred-title">Written Warranty Terms</h3>
+            <p class="cred-body">
+              [10-Year] Structural Defect Guarantee on all load-bearing elements, 2-Year Mechanical/Electrical systems
+              warranty, and 1-Year Craftsmanship warranty.
+            </p>
+            <div class="cred-code-badge">
+              <span>[10-YEAR] STRUCTURAL</span>
+            </div>
+          </div>
+
+          <!-- Credential 4: Safety Record -->
+          <div class="cred-card">
+            <div class="cred-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <h3 class="cred-title">Clean Safety Record</h3>
+            <p class="cred-body">
+              Zero lost-time injuries over the past [5] years. Daily OSHA toolbox safety briefings, PPE enforcement, and
+              secure site containment protocols.
+            </p>
+            <div class="cred-code-badge">
+              <span>OSHA COMPLIANT &bull; ZERO INCIDENTS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clients & Certified Trade Partners Logos Strip -->
+        <div class="partners-block">
+          <div class="partners-title">TRUSTED INDUSTRY SUPPLIERS &amp; ENGINEERING PARTNERS</div>
+          <div class="partners-grid">
+            <div class="partner-badge">[SteelCorp Engineering]</div>
+            <div class="partner-badge">[National Ready-Mix Concrete]</div>
+            <div class="partner-badge">[Master Builders Association]</div>
+            <div class="partner-badge">[State Construction Board]</div>
+            <div class="partner-badge">[Architectural Alliance]</div>
+            <div class="partner-badge">[OSHA Certified Partner]</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 9: Testimonials -->
+    <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonialsTitle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[VERIFIED CLIENT FEEDBACK]</div>
+          <h2 class="section-title" id="testimonialsTitle">What Property Owners Say About Us</h2>
+          <p class="section-subtitle">
+            Real feedback from clients in [City, State] who trusted [Company Name] with their homes and commercial
+            investments.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <blockquote class="testimonial-text">
+              &ldquo;They completed our new two-story home on the exact date agreed upon in the contract. The Friday
+              photo updates were amazing—we could follow foundation pours and framing without having to visit the dusty
+              site every day. No hidden charges, just honest craftsmanship.&rdquo;
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar">[DM]</div>
+              <div class="author-meta">
+                <span class="author-name">[David &amp; Sarah M.]</span>
+                <span class="author-project">New Home Build &bull; [The Oakridge Residence, 4,850 sq ft]</span>
+                <span class="author-loc">[City, State]</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <blockquote class="testimonial-text">
+              &ldquo;Commercial projects can be stressful with council permits and strict opening deadlines. [Owner
+              Name] and the [Company Name] crew managed all city inspections smoothly. Their fixed quote was respected
+              down to the penny. Highly recommended for commercial fit-outs.&rdquo;
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar">[MV]</div>
+              <div class="author-meta">
+                <span class="author-name">[Marcus Vance]</span>
+                <span class="author-project">Commercial Fit-Out &bull; [Pinnacle Corporate Plaza]</span>
+                <span class="author-loc">[City, State]</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <blockquote class="testimonial-text">
+              &ldquo;We added 1,400 sq ft to our family home while continuing to live on the ground floor. Their crew
+              was respectful, kept dust sealed off, and completed structural beam work safely without disturbing the
+              existing roofline. The finish quality is stellar.&rdquo;
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar">[ER]</div>
+              <div class="author-meta">
+                <span class="author-name">[Elena Rostova]</span>
+                <span class="author-project">Renovation &amp; Extension &bull; [Highland Park Project]</span>
+                <span class="author-loc">[City, State]</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FAQ (Expandable Accordion) -->
+    <section class="section faq-section" id="faq" aria-labelledby="faqTitle">
+      <div class="container max-w-narrow">
+        <div class="section-header">
+          <div class="section-tag">[FREQUENTLY ASKED QUESTIONS]</div>
+          <h2 class="section-title" id="faqTitle">Everything You Need to Know Before Building</h2>
+          <p class="section-subtitle">
+            Plain answers to common questions regarding timelines, fixed pricing, construction materials, and municipal
+            permits.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+
+          <!-- FAQ 1: Timeline -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-1" id="faq-btn-1">
+              <span class="faq-category-tag">Timeline</span>
+              <span class="faq-q-text">How long will my construction project take, and do you guarantee
+                deadlines?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-panel" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <div class="faq-answer-content">
+                <p>
+                  Typical timelines depend on scope: custom new homes usually take <strong>8 to 14 months</strong>,
+                  major renovations and extensions take <strong>4 to 7 months</strong>, and custom commercial fit-outs
+                  take <strong>2 to 4 months</strong>.
+                </p>
+                <p>
+                  Every contract includes a binding schedule with agreed milestone dates. We schedule subcontractor
+                  trades in parallel and order long-lead materials in advance to protect against delays.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2: Pricing -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-2" id="faq-btn-2">
+              <span class="faq-category-tag">Pricing</span>
+              <span class="faq-q-text">How does your fixed-price quote work? Are there hidden cost overruns?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-panel" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <div class="faq-answer-content">
+                <p>
+                  Our fixed-price quote is 100% itemized. We specify every material brand, concrete specification,
+                  plumbing fixture, and labor line item before work begins.
+                </p>
+                <p>
+                  Once the contract is signed, that price is locked. The only way the cost changes is if you explicitly
+                  request a written change order (for example, choosing a different countertop or altering room
+                  dimensions mid-project).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3: Materials -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-3" id="faq-btn-3">
+              <span class="faq-category-tag">Materials</span>
+              <span class="faq-q-text">What grade of building materials do you use, and can I choose specific
+                brands?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-panel" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <div class="faq-answer-content">
+                <p>
+                  We only source structural lumber, high-strength certified concrete mixes (minimum 3,500 to 4,000 PSI),
+                  corrosion-resistant rebar, and premium waterproofing membranes from trusted suppliers.
+                </p>
+                <p>
+                  For finishes—such as roofing tiles, windows, flooring, and electrical switches—we provide a curated
+                  catalog of high-durability options, or you can supply your own preferred architectural fixtures.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4: Approvals & Permits -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-4" id="faq-btn-4">
+              <span class="faq-category-tag">Approvals</span>
+              <span class="faq-q-text">Do you handle city building permits, zoning approvals, and inspections?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-panel" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <div class="faq-answer-content">
+                <p>
+                  <strong>Yes, 100%.</strong> You do not need to stand in line at the city planning office. We manage
+                  the entire regulatory process: submission of architectural and structural blueprints, zoning
+                  clearance, soil test filings, and scheduling required municipal inspections (foundation, framing,
+                  plumbing, rough-in electrical, and final occupancy).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5: Payment Milestones -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-5" id="faq-btn-5">
+              <span class="faq-category-tag">Contracts</span>
+              <span class="faq-q-text">What is your payment structure? Do you require full payment upfront?</span>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer-panel" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5" hidden>
+              <div class="faq-answer-content">
+                <p>
+                  <strong>Never pay 100% upfront.</strong> Our payments are tied directly to verified construction
+                  milestones. A standard project is divided into 5 or 6 clear milestone disbursements (e.g., initial
+                  deposit, foundation poured, framing &amp; roof locked, rough-in trades approved, interior finishes,
+                  and final punch-list handover).
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: Contact & Quote Request Form -->
+    <section class="section contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">[START YOUR BUILD]</div>
+          <h2 class="section-title" id="contactTitle">Request a Free, Fixed-Price Construction Quote</h2>
+          <p class="section-subtitle">
+            Fill out the form below to receive a detailed scope breakdown. When you submit, your project details will
+            instantly open in WhatsApp for immediate response.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Direct Details -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-heading">Direct Office &amp; Job Site Contacts</h3>
+            <p class="contact-info-desc">
+              Speak directly with our project estimating team. We answer calls and messages promptly during business
+              hours.
+            </p>
+
+            <ul class="contact-details-list">
+              <!-- Phone with dialer link -->
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">Direct Phone:</span>
+                  <a href="tel:[number]" class="detail-val tel-link" title="Tap to call">[number]</a>
+                  <span class="detail-note">Tappable &bull; Opens dialer</span>
+                </div>
+              </li>
+
+              <!-- WhatsApp -->
+              <li class="contact-item">
+                <div class="contact-icon wa-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.175.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.5-1.786-1.676-2.087-.175-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.301.301-.502.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.238-.244-.588-.493-.509-.678-.518-.176-.009-.376-.011-.577-.011-.201 0-.527.075-.803.376-.276.301-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.15.201 2.124 3.243 5.145 4.548.719.311 1.28.497 1.718.636.722.229 1.378.197 1.897.12.578-.087 1.78-.727 2.031-1.431.251-.703.251-1.305.176-1.43-.076-.126-.277-.202-.578-.352zM12 2C6.48 2 2 6.48 2 12c0 1.95.56 3.77 1.53 5.32L2 22l4.83-1.5A9.957 9.957 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.66 0-3.21-.49-4.52-1.33l-.32-.2-3.13.97.99-3.04-.21-.34A8.18 8.18 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2 4.52 0 8.2 3.68 8.2 8.2 0 4.52-3.68 8.2-8.2 8.2z" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">WhatsApp Chat:</span>
+                  <a href="https://wa.me/[number]?text=Hello%20[Company%20Name],%20I%20would%20like%20to%20discuss%20a%20construction%20project."
+                    target="_blank" rel="noopener" class="detail-val wa-link">[number]</a>
+                  <span class="detail-note">Instant messaging &amp; plan sharing</span>
+                </div>
+              </li>
+
+              <!-- Email -->
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">Email Address:</span>
+                  <a href="mailto:[email]" class="detail-val">[email]</a>
+                  <span class="detail-note">For drawings, tender requests &amp; RFPs</span>
+                </div>
+              </li>
+
+              <!-- Address & Google Maps Link -->
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">Physical Address:</span>
+                  <span class="detail-val">[full address]</span>
+                  <a href="https://maps.google.com/?q=[full+address]" target="_blank" rel="noopener" class="maps-link">
+                    <span>Open in Google Maps</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                      aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <!-- Working Hours -->
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="detail-label">Working Hours:</span>
+                  <span class="detail-val">[Mon to Sat, 9 am to 6 pm]</span>
+                  <span class="detail-note">Sunday: Emergency on-call support only</span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Blueprint Security Box -->
+            <div class="security-privacy-note">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Your project details and phone number are strictly confidential. We never sell your data or
+                spam.</span>
+            </div>
+          </div>
+
+          <!-- Quote Request Form -->
+          <div class="contact-form-card">
+            <div class="form-header">
+              <h3 class="form-title">Instant Quote Form</h3>
+              <p class="form-desc">
+                Submitting this form prepares a pre-filled WhatsApp message ready to send with one click.
+              </p>
+            </div>
+
+            <form id="quoteForm" class="quote-form" novalidate>
+
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="clientName" class="form-label">
+                  Your Full Name <span class="required-star">*</span>
+                </label>
+                <div class="input-icon-wrap">
+                  <input type="text" id="clientName" name="name" class="form-input" placeholder="e.g. John Miller"
+                    required autocomplete="name">
+                </div>
+                <span class="field-error" id="nameError" aria-live="polite"></span>
+              </div>
+
+              <!-- Phone Field -->
+              <div class="form-group">
+                <label for="clientPhone" class="form-label">
+                  Phone Number <span class="required-star">*</span>
+                </label>
+                <div class="input-icon-wrap">
+                  <input type="tel" id="clientPhone" name="phone" class="form-input"
+                    placeholder="e.g. +1 (555) 000-0000" required autocomplete="tel">
+                </div>
+                <span class="field-error" id="phoneError" aria-live="polite"></span>
+              </div>
+
+              <!-- Project Location -->
+              <div class="form-group">
+                <label for="projectLocation" class="form-label">
+                  Project Location / City <span class="required-star">*</span>
+                </label>
+                <div class="input-icon-wrap">
+                  <input type="text" id="projectLocation" name="location" class="form-input"
+                    placeholder="e.g. [City or Neighborhood, State]" required>
+                </div>
+                <span class="field-error" id="locationError" aria-live="polite"></span>
+              </div>
+
+              <!-- Project Type Dropdown -->
+              <div class="form-group">
+                <label for="projectType" class="form-label">
+                  Project Type <span class="required-star">*</span>
+                </label>
+                <div class="select-wrap">
+                  <select id="projectType" name="projectType" class="form-select" required>
+                    <option value="" disabled selected>-- Select Project Type --</option>
+                    <option value="New Home Construction">New Home Construction</option>
+                    <option value="Commercial Building">Commercial Building</option>
+                    <option value="Renovation & Extension">Renovation &amp; Extension</option>
+                    <option value="Custom Interiors & Fit-Out">Custom Interiors &amp; Fit-Out</option>
+                    <option value="Structural & Foundation Works">Structural &amp; Foundation Works</option>
+                    <option value="Other Construction Work">Other / Multiple Scopes</option>
+                  </select>
+                </div>
+                <span class="field-error" id="typeError" aria-live="polite"></span>
+              </div>
+
+              <!-- Rough Budget Dropdown -->
+              <div class="form-group">
+                <label for="roughBudget" class="form-label">
+                  Rough Budget Range <span class="required-star">*</span>
+                </label>
+                <div class="select-wrap">
+                  <select id="roughBudget" name="roughBudget" class="form-select" required>
+                    <option value="" disabled selected>-- Select Rough Budget --</option>
+                    <option value="$25,000 - $75,000">$25,000 &ndash; $75,000 (Small Renovation / Room Extension)
+                    </option>
+                    <option value="$75,000 - $200,000">$75,000 &ndash; $200,000 (Full Remodel / Fit-Out)</option>
+                    <option value="$200,000 - $500,000">$200,000 &ndash; $500,000 (Major Addition / Custom Build)
+                    </option>
+                    <option value="$500,000 - $1,000,000">$500,000 &ndash; $1,000,000+ (Turnkey Home / Commercial)
+                    </option>
+                    <option value="$1,000,000+">$1,000,000+ (Multi-Unit / Major Commercial)</option>
+                    <option value="Flexible / Needs Consultation">Flexible / Need Cost Estimation Advice</option>
+                  </select>
+                </div>
+                <span class="field-error" id="budgetError" aria-live="polite"></span>
+              </div>
+
+              <!-- Project Notes / Optional Details -->
+              <div class="form-group">
+                <label for="projectNotes" class="form-label">
+                  Project Notes &amp; Target Timeline <span class="optional-tag">(Optional)</span>
+                </label>
+                <textarea id="projectNotes" name="notes" class="form-textarea" rows="3"
+                  placeholder="Tell us about the property, square footage, whether you have approved architectural drawings, and preferred start date..."></textarea>
+              </div>
+
+              <!-- Submit Button: Opens WhatsApp with prefilled message -->
+              <button type="submit" id="submitQuoteBtn" class="btn btn-whatsapp btn-block btn-lg">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.175.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.5-1.786-1.676-2.087-.175-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.301.301-.502.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.238-.244-.588-.493-.509-.678-.518-.176-.009-.376-.011-.577-.011-.201 0-.527.075-.803.376-.276.301-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.15.201 2.124 3.243 5.145 4.548.719.311 1.28.497 1.718.636.722.229 1.378.197 1.897.12.578-.087 1.78-.727 2.031-1.431.251-.703.251-1.305.176-1.43-.076-.126-.277-.202-.578-.352zM12 2C6.48 2 2 6.48 2 12c0 1.95.56 3.77 1.53 5.32L2 22l4.83-1.5A9.957 9.957 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.66 0-3.21-.49-4.52-1.33l-.32-.2-3.13.97.99-3.04-.21-.34A8.18 8.18 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2 4.52 0 8.2 3.68 8.2 8.2 0 4.52-3.68 8.2-8.2 8.2z" />
+                </svg>
+                <span>Send Quote Request via WhatsApp</span>
+              </button>
+
+              <div class="form-disclaimer">
+                <span>&bull; Works on mobile phones (WhatsApp App) and desktop (WhatsApp Web).</span>
+                <span>&bull; You can review and edit the text before sending in WhatsApp.</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- OWNER PHOTO MANAGER BAR (Activates when photos are inserted) -->
+  <aside class="owner-photo-bar" id="ownerPhotoBar" hidden aria-label="Owner Photo Management Bar">
+    <div class="container owner-bar-inner">
+      <div class="owner-bar-info">
+        <span class="owner-badge">Owner Mode</span>
+        <strong id="ownerPhotoCount">0 photos inserted</strong>
+        <span class="owner-save-tip">&bull; Saved in browser</span>
+      </div>
+      <div class="owner-bar-actions">
+        <button type="button" id="barOpenStudioBtn" class="owner-btn owner-btn-studio"
+          title="Open full Photo Studio modal">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+            aria-hidden="true">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+          </svg>
+          <span>Manage in Studio</span>
+        </button>
+        <button type="button" id="downloadHtmlBtn" class="owner-btn owner-btn-primary"
+          title="Download updated HTML file with your photos">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+            aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download HTML with Photos</span>
+        </button>
+        <button type="button" id="resetAllPhotosBtn" class="owner-btn owner-btn-reset"
+          title="Reset all custom photos back to blueprints">
+          Reset All
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- SECTION 12: Footer with Copyright -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+
+        <!-- Column 1: Company Profile -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo">
+            <span class="footer-brand-title">[Company Name]</span>
+            <span class="footer-brand-sub">General Contractor &amp; Construction Engineers</span>
+          </div>
+          <p class="footer-about">
+            Serving [City, State] with professional new home construction, commercial buildings, extensions, and
+            interior architectural renovations. Fixed pricing, milestone accountability, and 10-year structural
+            warranty.
+          </p>
+          <div class="footer-licence-badge">
+            State Contractor License: <strong>[#GC-000000]</strong>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Recent Projects</a></li>
+            <li><a href="#how-we-work">How We Work</a></li>
+            <li><a href="#about">About Our Company</a></li>
+            <li><a href="#credentials">Licensing &amp; Safety</a></li>
+            <li><a href="#faq">Construction FAQ</a></li>
+            <li><a href="#contact">Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: What We Build -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">What We Build</h4>
+          <ul class="footer-links">
+            <li><a href="#services">[New Homes]</a></li>
+            <li><a href="#services">[Commercial Buildings]</a></li>
+            <li><a href="#services">[Renovation &amp; Extensions]</a></li>
+            <li><a href="#services">[Custom Interiors]</a></li>
+            <li><a href="#services">[Foundation &amp; Concrete]</a></li>
+            <li><a href="#services">[Permits &amp; Approvals]</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact & Service Area -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Headquarters</h4>
+          <address class="footer-address">
+            <p><strong>[Company Name]</strong></p>
+            <p>[full address]</p>
+            <p>[City, State, Zip Code]</p>
+            <p class="footer-contact-links">
+              Phone: <a href="tel:[number]">[number]</a><br>
+              WhatsApp: <a href="https://wa.me/[number]">[number]</a><br>
+              Email: <a href="mailto:[email]">[email]</a>
+            </p>
+            <p class="footer-hours-txt">Hours: [Mon to Sat, 9 am to 6 pm]</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> <strong>[Company Name]</strong>. All rights reserved.
+        </div>
+        <div class="footer-fineprint">
+          Designed with blueprint precision for property owners in [City, State].
+        </div>
+        <div class="footer-back-to-top">
+          <a href="#hero" class="back-to-top-btn" aria-label="Back to top of page">
+            <span>Back to Top</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EXTRA FEATURE: Floating WhatsApp Button on Every Screen -->
+  <aside class="floating-wa-container" aria-label="Direct WhatsApp Contact">
+    <a href="https://wa.me/[number]?text=Hello%20[Company%20Name],%20I%20am%20interested%20in%20a%20construction%20quote."
+      class="floating-wa-btn" target="_blank" rel="noopener" id="floatingWhatsAppBtn"
+      aria-label="Chat with us on WhatsApp for an instant construction quote">
+      <span class="wa-beacon-ring" aria-hidden="true"></span>
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.175.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.5-1.786-1.676-2.087-.175-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.301.301-.502.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.238-.244-.588-.493-.509-.678-.518-.176-.009-.376-.011-.577-.011-.201 0-.527.075-.803.376-.276.301-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.15.201 2.124 3.243 5.145 4.548.719.311 1.28.497 1.718.636.722.229 1.378.197 1.897.12.578-.087 1.78-.727 2.031-1.431.251-.703.251-1.305.176-1.43-.076-.126-.277-.202-.578-.352zM12 2C6.48 2 2 6.48 2 12c0 1.95.56 3.77 1.53 5.32L2 22l4.83-1.5A9.957 9.957 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.66 0-3.21-.49-4.52-1.33l-.32-.2-3.13.97.99-3.04-.21-.34A8.18 8.18 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2 4.52 0 8.2 3.68 8.2 8.2 0 4.52-3.68 8.2-8.2 8.2z" />
+      </svg>
+      <span class="floating-wa-label">WhatsApp Us</span>
+    </a>
+  </aside>
+
+  <!-- EXTRA FEATURE: Mobile Bottom Sticky Action Bar (visible on phones < 640px) -->
+  <div class="mobile-sticky-actions" role="region" aria-label="Quick Action Bar">
+    <a href="tel:[number]" class="mobile-action-btn action-phone" aria-label="Call [number]">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+        aria-hidden="true">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+        </path>
+      </svg>
+      <span>Call Now</span>
+    </a>
+    <a href="#contact" class="mobile-action-btn action-quote" aria-label="Get a Quote">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+        aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="12" y1="18" x2="12" y2="12"></line>
+        <line x1="9" y1="15" x2="15" y2="15"></line>
+      </svg>
+      <span>Get Quote</span>
+    </a>
+    <a href="https://wa.me/[number]?text=Hello%20[Company%20Name],%20I%20would%20like%20to%20request%20a%20quote."
+      class="mobile-action-btn action-wa" target="_blank" rel="noopener" aria-label="WhatsApp [number]">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path
+          d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.18-.175.2-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.5-1.786-1.676-2.087-.175-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.175.2-.301.301-.502.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.238-.244-.588-.493-.509-.678-.518-.176-.009-.376-.011-.577-.011-.201 0-.527.075-.803.376-.276.301-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.15.201 2.124 3.243 5.145 4.548.719.311 1.28.497 1.718.636.722.229 1.378.197 1.897.12.578-.087 1.78-.727 2.031-1.431.251-.703.251-1.305.176-1.43-.076-.126-.277-.202-.578-.352zM12 2C6.48 2 2 6.48 2 12c0 1.95.56 3.77 1.53 5.32L2 22l4.83-1.5A9.957 9.957 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.66 0-3.21-.49-4.52-1.33l-.32-.2-3.13.97.99-3.04-.21-.34A8.18 8.18 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2 4.52 0 8.2 3.68 8.2 8.2 0 4.52-3.68 8.2-8.2 8.2z" />
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- WhatsApp Redirection Confirmation Modal -->
+  <div id="waModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="#22c55e">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12c0 1.95.56 3.77 1.53 5.32L2 22l4.83-1.5A9.957 9.957 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.66 0-3.21-.49-4.52-1.33l-.32-.2-3.13.97.99-3.04-.21-.34A8.18 8.18 0 0 1 3.8 12c0-4.52 3.68-8.2 8.2-8.2 4.52 0 8.2 3.68 8.2 8.2 0 4.52-3.68 8.2-8.2 8.2z" />
+        </svg>
+      </div>
+      <h3 id="modalTitle" class="modal-title">Ready to Send on WhatsApp</h3>
+      <p class="modal-text">
+        Your quote request has been formatted into a message. Click below to open WhatsApp and send it directly to our
+        team.
+      </p>
+      <div class="modal-msg-preview" id="modalMsgPreview"></div>
+      <div class="modal-actions">
+        <a href="#" id="modalConfirmBtn" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">
+          Open WhatsApp Now
+        </a>
+        <button id="modalCopyBtn" class="btn btn-outline btn-block">
+          Copy Message Text
+        </button>
+        <button id="modalCloseBtn" class="btn btn-secondary btn-block">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSISTENT FLOATING OWNER QUICK BUTTON (Accessible across whole page) -->
+  <button id="floatingOwnerBtn" class="floating-owner-btn" type="button" aria-label="Insert Owner Photos"
+    title="Owner: Insert your photos directly">
+    <span class="floating-owner-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+        <circle cx="12" cy="13" r="4"></circle>
+      </svg>
+    </span>
+    <span class="floating-owner-text">Insert Photos</span>
+    <span class="floating-owner-badge" id="floatingPhotoCount">0/8</span>
+  </button>
+
+  <!-- OWNER PHOTO STUDIO MODAL: Full Control Center to Insert & Manage Photos Directly -->
+  <div id="ownerStudioModal" class="modal-backdrop studio-modal-backdrop" role="dialog" aria-modal="true"
+    aria-labelledby="studioModalTitle" hidden>
+    <div class="studio-modal-card">
+      <!-- Studio Header -->
+      <div class="studio-header">
+        <div class="studio-header-title-wrap">
+          <div class="studio-icon-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </div>
+          <div>
+            <h2 id="studioModalTitle" class="studio-title">Owner Photo Studio</h2>
+            <p class="studio-subtitle">Insert and manage your real project &amp; team photos directly. Changes appear
+              instantly on your website and are saved in your browser.</p>
+          </div>
+        </div>
+        <button type="button" id="closeStudioBtn" class="studio-close-btn" aria-label="Close Owner Photo Studio">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Studio Stats & Batch Bar -->
+      <div class="studio-toolbar">
+        <div class="studio-stats">
+          <span class="studio-badge-pill" id="studioModalBadge">0 / 8 Photos Added</span>
+          <span class="studio-status-text">IndexedDB Persistent Storage Active</span>
+        </div>
+        <div class="studio-top-actions">
+          <!-- Batch Upload Button -->
+          <label class="btn-studio btn-studio-batch" title="Select multiple photos to auto-populate empty slots">
+            <input type="file" id="batchPhotoInput" accept="image/*" multiple hidden>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+              aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <span>Batch Upload Photos</span>
+          </label>
+          <!-- Download Standalone HTML -->
+          <button type="button" id="studioDownloadBtn" class="btn-studio btn-studio-download"
+            title="Download standalone index.html with all photos embedded">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+              aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download HTML with Photos</span>
+          </button>
+          <!-- Reset All -->
+          <button type="button" id="studioResetAllBtn" class="btn-studio btn-studio-reset"
+            title="Reset all custom photos back to blueprints">
+            <span>Reset All</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Studio Quick Guide Banner -->
+      <div class="studio-guide-banner">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          class="guide-icon" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span><strong>How it works:</strong> Tap <em>"Choose Photo"</em> on any card below to pick from your camera or
+          photo gallery. Photos are automatically compressed and updated live on the site. Click <em>"Download HTML with
+            Photos"</em> whenever you want to export your completed site file!</span>
+      </div>
+
+      <!-- Studio Slots Grid -->
+      <div class="studio-slots-grid">
+
+        <!-- Slot 0: Hero Section -->
+        <div class="studio-slot-item" data-studio-slot="hero-photo">
+          <div class="studio-thumb-box">
+            <img src="" alt="Hero Showcase Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Blueprint CAD</span>
+            </div>
+            <span class="studio-slot-badge">Hero Banner</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">Hero Featured Build</h4>
+            <p class="studio-slot-rec">Recommended: 1200 &times; 700 px (Landscape)</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Hero section">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="hero-photo" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="hero-photo"
+                title="Reset to blueprint" hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="#hero"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 1: Project 1 -->
+        <div class="studio-slot-item" data-studio-slot="project-1">
+          <div class="studio-thumb-box">
+            <img src="" alt="Project 1 Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Blueprint</span>
+            </div>
+            <span class="studio-slot-badge">Project 1</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">New Home Construction</h4>
+            <p class="studio-slot-rec">The Oakridge Modern Residence &bull; 16:9</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Project 1">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="project-1" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="project-1" title="Reset to blueprint"
+                hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="[data-slot-id='project-1']"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 2: Project 2 -->
+        <div class="studio-slot-item" data-studio-slot="project-2">
+          <div class="studio-thumb-box">
+            <img src="" alt="Project 2 Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Blueprint</span>
+            </div>
+            <span class="studio-slot-badge">Project 2</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">Commercial Plaza</h4>
+            <p class="studio-slot-rec">Pinnacle Commercial Plaza &bull; 16:9</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Project 2">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="project-2" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="project-2" title="Reset to blueprint"
+                hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="[data-slot-id='project-2']"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 3: Project 3 -->
+        <div class="studio-slot-item" data-studio-slot="project-3">
+          <div class="studio-thumb-box">
+            <img src="" alt="Project 3 Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Blueprint</span>
+            </div>
+            <span class="studio-slot-badge">Project 3</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">Renovations &amp; Extensions</h4>
+            <p class="studio-slot-rec">Heritage Villa Transformation &bull; 16:9</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Project 3">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="project-3" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="project-3" title="Reset to blueprint"
+                hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="[data-slot-id='project-3']"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 4: Project 4 -->
+        <div class="studio-slot-item" data-studio-slot="project-4">
+          <div class="studio-thumb-box">
+            <img src="" alt="Project 4 Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Blueprint</span>
+            </div>
+            <span class="studio-slot-badge">Project 4</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">Custom Modern Villa</h4>
+            <p class="studio-slot-rec">Lakefront Contemporary Villa &bull; 16:9</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Project 4">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="project-4" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="project-4" title="Reset to blueprint"
+                hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="[data-slot-id='project-4']"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 5: Project 5 -->
+        <div class="studio-slot-item" data-studio-slot="project-5">
+          <div class="studio-thumb-box">
+            <img src="" alt="Project 5 Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Blueprint</span>
+            </div>
+            <span class="studio-slot-badge">Project 5</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">Industrial Logistics Center</h4>
+            <p class="studio-slot-rec">Apex Logistics Warehouse &bull; 16:9</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Project 5">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="project-5" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="project-5" title="Reset to blueprint"
+                hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="[data-slot-id='project-5']"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 6: Project 6 -->
+        <div class="studio-slot-item" data-studio-slot="project-6">
+          <div class="studio-thumb-box">
+            <img src="" alt="Project 6 Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>Blueprint</span>
+            </div>
+            <span class="studio-slot-badge">Project 6</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">Architectural Interiors</h4>
+            <p class="studio-slot-rec">Skyline Penthouse Interior &bull; 16:9</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Project 6">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="project-6" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="project-6" title="Reset to blueprint"
+                hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="[data-slot-id='project-6']"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 7: Team Photo -->
+        <div class="studio-slot-item" data-studio-slot="team-photo">
+          <div class="studio-thumb-box">
+            <img src="" alt="Owner &amp; Team Preview" class="studio-thumb-img" hidden>
+            <div class="studio-thumb-placeholder">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>Blueprint</span>
+            </div>
+            <span class="studio-slot-badge">About Us</span>
+          </div>
+          <div class="studio-slot-meta">
+            <h4 class="studio-slot-name">Owner &amp; Team Photo</h4>
+            <p class="studio-slot-rec">Kannaiyan M &bull; Recommended 4:3</p>
+            <div class="studio-slot-btn-group">
+              <label class="btn-studio-slot-upload" title="Choose photo for Owner / Team">
+                <input type="file" accept="image/*" class="slot-file-input" data-slot="team-photo" hidden>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <span class="btn-text-upload">Choose Photo</span>
+              </label>
+              <button type="button" class="btn-studio-slot-reset" data-reset-slot="team-photo"
+                title="Reset to blueprint" hidden>Reset</button>
+              <button type="button" class="btn-studio-slot-jump" data-jump-section="#about"
+                title="View on website">View</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Studio Footer -->
+      <div class="studio-footer">
+        <span class="studio-tip-text">Photos stay saved automatically when you refresh or close this browser.</span>
+        <button type="button" id="closeStudioFooterBtn" class="btn btn-secondary">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sleek Toast Notification for Photos -->
+  <div id="ownerToast" class="owner-toast" role="status" aria-live="polite" hidden>
+    <div class="toast-content">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#22c55e" stroke-width="2.5"
+        aria-hidden="true">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span id="ownerToastText">Photo saved successfully!</span>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
